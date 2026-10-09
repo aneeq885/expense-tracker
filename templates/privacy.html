@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="auth-section">
+    <div class="legal-container">
+
+        <div class="auth-header">
+            <h1 class="auth-title">Privacy Policy</h1>
+            <p class="auth-subtitle">Last updated: 9 October 2026</p>
+        </div>
+
+        <div class="auth-card legal-card">
+
+            <div class="legal-section">
+                <h2 class="legal-heading">1. Data We Collect</h2>
+                <p class="legal-text">When you create an account, we collect your name, email address and password. When you use Spendly, we also store the expense records you enter, such as amount, category, date and description.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 class="legal-heading">2. How We Use Your Data</h2>
+                <p class="legal-text">We use your information to run your account, show your expense history and summaries, and keep the service working. We do not sell your personal data, and we do not use your expense records for advertising.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 class="legal-heading">3. Data Storage</h2>
+                <p class="legal-text">Your data is stored in the Spendly database. Passwords are stored in hashed form, not as plain text. We take reasonable steps to protect your information, but no system can be guaranteed to be completely secure.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 class="legal-heading">4. Third Party Services</h2>
+                <p class="legal-text">Spendly uses third-party services to load its fonts. These services may receive your IP address when the page loads. We do not share your expense records with any other third parties.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 class="legal-heading">5. Contact Us</h2>
+                <p class="legal-text">If you have questions about this Privacy Policy or want your data deleted, contact the Spendly team at the email address listed on your account page.</p>
+            </div>
+
+        </div>
+
+        <p class="auth-switch">
+            <a href="{{ url_for('landing') }}">Back to home</a>
+        </p>
+
+    </div>
+</section>
+
+{% endblock %}
