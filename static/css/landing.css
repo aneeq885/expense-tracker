@@ -1,0 +1,134 @@
+/* ------------------------------------------------------------------ */
+/* Landing hero — dark spending card                                   */
+/* ------------------------------------------------------------------ */
+
+.hero-card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(160deg, #2b313a 0%, #1d2228 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 2rem 1.75rem 2.25rem;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    color: #f2f4f7;
+    font-family: var(--font-body);
+}
+
+.hero-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-card-label {
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8b929c;
+}
+
+.hero-card-total {
+    font-family: var(--font-display);
+    font-size: 2.1rem;
+    color: #ffffff;
+}
+
+.hero-card-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.hero-row {
+    display: grid;
+    grid-template-columns: 110px 1fr 78px;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    --c: #2ecc71;
+}
+
+.hero-row-bills {
+    --c: #2ecc71;
+    border-color: rgba(46, 204, 113, 0.6);
+    box-shadow: 0 0 16px rgba(46, 204, 113, 0.15);
+}
+
+.hero-row-food { --c: #f5a040; }
+.hero-row-health { --c: #3b8ff0; }
+.hero-row-transport { --c: #a85ad6; }
+
+.hero-row-name {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1rem;
+    color: #e9ecf1;
+}
+
+.hero-row-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--c);
+}
+
+.hero-row-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-row-track {
+    position: relative;
+    height: 10px;
+    background: #15181d;
+    border-radius: 999px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.hero-row-fill {
+    height: 100%;
+    background: var(--c);
+    border-radius: 999px;
+    box-shadow: 0 0 10px var(--c);
+}
+
+.hero-row-pct {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.65rem;
+    color: #9aa1ab;
+}
+
+.hero-row-amt {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: right;
+}
+
+.hero-card-add {
+    display: block;
+    margin: 1.75rem auto 0;
+    background: #1fa35a;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(31, 163, 90, 0.35);
+    transition: background 0.2s;
+}
+
+.hero-card-add:hover { background: #22b463; }
